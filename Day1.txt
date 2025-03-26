@@ -1,0 +1,33 @@
+Day 1:
+==>ARTIFICIAL INTELLIGENCE:
+---------It is effort to automate the intellectual tasks normally performed by humans.
+---------Can computers think? questioned by the scientist created the term AI.
+---------It is simply the set of predefined rules eg.,tic-tac-toe game,chess.These are not 
+working by itself,human has written tons of lines of code beforehand for the game to execute.
+---------Machine learning is a subset of AI.
+---------ML comes into play when the data's are given the rules ie., it has the capbility 
+to analyse the data and produce the result.
+
+CLASSICAL PROGRAMMING:
+---------Data and rules produces result.
+
+MACHINE LEARNIG PROGRAMMING:
+---------Data and result produces rules.This is the reason that we do not get high accuracy.
+---------So this becomes our goal to create a ML model that makes fewer mistakes.
+---------Rather than finding the rules for the program it is finding the rules by the algorithm.
+
+NEURAL NETWORK:
+---------Subset of ML
+---------It is a form oof ML that uses layered representation of data.(multi-stage information
+extraction process.)
+
+Note:
+---------Data is a important part in ML,NN,AI
+
+Input information:
+---------The information that we always have and give it to the models to get some output called features.
+---------It is used to make prediction.
+Example:
+Mid-term 1 and final results are know.therfore they would be the input information ie features.
+Our task is to find the performance of mid-term 2 based on mid-term 1 and final result.So here,
+mid-term 2 is called as labels.
