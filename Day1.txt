@@ -18,7 +18,7 @@ MACHINE LEARNIG PROGRAMMING:
 
 NEURAL NETWORK:
 ---------Subset of ML
----------It is a form oof ML that uses layered representation of data.(multi-stage information
+---------It is a form of ML that uses layered representation of data.(multi-stage information
 extraction process.)
 
 Note:
@@ -31,3 +31,65 @@ Example:
 Mid-term 1 and final results are know.therfore they would be the input information ie features.
 Our task is to find the performance of mid-term 2 based on mid-term 1 and final result.So here,
 mid-term 2 is called as labels.
+
+TENSORS(DAY 2):
+---------Tensors are generalization of vectors and matrices with has higher dimension(n).
+---------It represents partially defined computation that will eventually produce a value.
+---------Each tensor has a datatype(int,float,char etc) and shape(dimensions of data).
+
+HOW TO CREATE TENSOR??
+   string = tf.Variable("This is Day 2",tf.string) //scalar since their rank=0
+   num = tf.Variable(324,tf.int16)
+   floating = tf.Variable(1.234,tf.float64)
+
+RANK OR DEGREE OF TENSOR:
+---------The number of dimensions involved in tensor.
+ex:
+rank1 = tf.Variable([1,2,3],tf.int16) ==>rank=1
+rank2 = tf.Variable([[1,2,3],[4,5,6]],tf.int16) ==>rank=2
+To get the rank,
+tf.rank(rank1)
+Output:
+<tf.Tensor:shape=(),dtype=int16,numpy=1>
+
+SHAPE OF A TENSOR:
+---------The amount of elements that exists in each dimension.
+ex:
+rank1.shape ==>TensorShape([3])
+rank2.shape ==>TensorShape([3,3]) //It should be a square matrix.This means there are 3 elements in the list and there are 3 such list.
+
+RESHAPING A TENSOR:
+---------Changing the dimensions of tensor.
+Example:
+t1 = tf.ones([1,2,3])
+Lets go from reverse,
+There are 3 elements in each list.There are 2 such list.This is again placed in a common list.
+output:
+[[[1.1.1.].[1.1.1.]]] ,shape=(1,2,3),dtype=float32
+
+t2 = tf.reshape(t1,[2,3,1])
+[[[1.][1.][1.]]
+[[1.][1.][1.]]]
+
+t3 = tf.reshape(t1,[3,-1])
+//-1 tells the tensr to calculate the size of dimensions in that particular place.
+//From above we can see that there is 6 elements in a list so this gets reshaped to [3,2].
+//The number of elements in the reshaped tensor must match to the number of elements in the original.
+[[1.1.][1.1.][1.1.]]
+
+TYPES OF TENSORS:
+1.Variable
+2.Constant
+3.PlaceHolder
+4.SparseTensor
+Except variable others are immutable that is their value do not change during execution.
+
+EVALUATION TENSORS:
+---------Tensor can be evaluated by session.
+This is a default code:
+
+with tf.Session() as sess: //creates a session using default graph
+    tensor.eval() //tensor is the name of your tensor
+
+This is a default graph holding normal opration and is not specific to any other graph.
+

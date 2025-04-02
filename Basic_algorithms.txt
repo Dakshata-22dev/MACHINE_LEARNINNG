@@ -1,0 +1,18 @@
+1.Linear Regression---------used for numerical value
+                   ---------Linear progression with data values.
+                   ---------Refer [image1] once you draw a line so that you can approximately join the dots
+            Using this the future value can be predicted.
+                   --------- In linear regression: y=mx+c where 'c' is the intercept;'x'and 'y' are the points plotted and 'm' is the steepness of the line of best fit.
+            To find slop take any 2 points that forms a right angled triangle.   [m=y2-y1/x2-x1]
+                   ---------Line of best fit is a line through which a scatter plot of data points represesnts the relationship between those points.
+                   ---------After ploting that line we can use that particular line to predict the future values.
+                   ---------Line of best fit is good when all the points plotted to the line is closer to the line that is drawn.
+              Installation:!pip install -q sklearn
+                           %tensorflow_version 2.x
+              ===>Numpy is the most optimized version of arrays used for multi-dimensional calculations.It allows matrix addition,suntraction,multiplication,division,dot product,scalar product etc
+              ===>Pandas is data analytics tool which helps to manipulate data like load dataset,view data ,cut rows or columns in dataset etc.
+              ===>Mathplotlib is used for visualization of graphs and charts.
+              ===>In tensorflow we need feature_column is used to create linear regressiion algorithm.[Refer image.png]
+2.Classification
+3.Clustering
+4.Hidden Markov models
